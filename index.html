@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: serif;
+            background: DarkSeaGreen;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            height: 50vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+    </style>
+    <title>Random Cursor</title>
+</head>
+<body>
+    <div class="section section1">Move your mouse around!</div>
+    <div class="section section2">The cursor is randomized!</div>
+
+    <script>
+        const cursorStyles = [
+            'auto',           // Default
+            'pointer',        // Clickable (hand)
+            'crosshair',      // Crosshair
+            'move',           // Move icon
+            'wait',           // Wait (loading)
+            'text',           // Text selection
+            'help',           // Help (question mark)
+            'progress',       // Progress (spinner)
+            'not-allowed',
+            'zoom-in',
+            'zoom-out',
+            'ne-resize'
+        ];
+        document.addEventListener('mousemove', function() {
+            const randomCursor = cursorStyles[Math.floor(Math.random() * cursorStyles.length)];
+            document.body.style.cursor = randomCursor;
+        });
+    </script>
+</body>
+</html>
