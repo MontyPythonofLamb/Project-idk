@@ -1,47 +1,116 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <style>
         body {
             font-family: serif;
             background: DarkSeaGreen;
+            color: purple;
             margin: 0;
             padding: 0;
         }
-        .section {
-            height: 50vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
+        .section1:hover {
+            cursor: pointer;
+        }
+        .section2:hover {
+            cursor: zoom-in;
+        }
+        .section3:hover {
+            cursor: wait;
+        }
+        .section4:hover {
+            cursor: not-allowed;
+        }
+        .section5:hover {
+            cursor: all-scroll;
+        }
+        .section6:hover {
+            cursor: alias;
+        }
+        .section7:hover {
+            cursor: row-resize;
+        }
+        .section8:hover {
+            cursor: cell;
+        }
+        .section9:hover {
+            cursor: col-resize;
+        }
+        .section10:hover {
+            cursor: crosshair;
+        }
+        .section11:hover {
+            cursor: ew-resize;
+        }
+        .section12:hover {
+            cursor: url(cursors/pencil.png), auto;
+        }
+        .section13:hover {
+            cursor: auto;
+        }
+        .section14:hover {
+            cursor: progress;
+        }
+        .section15:hover {
+            cursor: text;
+        }
+        .section16:hover {
+            cursor: zoom-out;
+        }
+        .section17:hover {
+            cursor: none;
+        }
+        .section18:hover {
+            cursor: grabbing;
+        }
+        .section19:hover {
+            cursor: help;
+        }
+        .section20:hover {
+            cursor: sw-resize;
         }
     </style>
-    <title>Random Cursor</title>
+    <title>Dynamic Cursors</title>
 </head>
 <body>
-    <div class="section section1">Move your mouse around!</div>
-    <div class="section section2">The cursor is randomized!</div>
-
-    <script>
-        const cursorStyles = [
-            'auto',           // Default
-            'pointer',        // Clickable (hand)
-            'crosshair',      // Crosshair
-            'move',           // Move icon
-            'wait',           // Wait (loading)
-            'text',           // Text selection
-            'help',           // Help (question mark)
-            'progress',       // Progress (spinner)
-            'not-allowed',
-            'zoom-in',
-            'zoom-out',
-            'ne-resize'
-        ];
-        document.addEventListener('mousemove', function() {
-            const randomCursor = cursorStyles[Math.floor(Math.random() * cursorStyles.length)];
-            document.body.style.cursor = randomCursor;
-        });
-    </script>
+    <div class="section1" style="height: 10vh;width: 89.875vh;background: powderblue">
+    </div>
+    <div class="section2" style="height: 10vh;width: 89.875vh;background: deeppink">
+    </div>
+    <div class="section3" style="height: 10vh;width: 89.875vh;background: palevioletred">
+    </div>
+    <div class="section4" style="height: 10vh;width: 89.875vh;background: mediumvioletred">
+    </div>
+    <div class="section5" style="height: 10vh;width: 89.875vh;background: green">
+    </div>
+    <div class="section6" style="height: 10vh;width: 89.875vh;background: grey">
+    </div>
+    <div class="section7" style="height: 10vh;width: 89.875vh;background: darkslategrey">
+    </div>
+    <div class="section8" style="height: 10vh;width: 89.875vh;background: silver">
+    </div>
+    <div class="section9" style="height: 10vh;width: 89.875vh;background: darkgoldenrod">
+    </div>
+    <div class="section10" style="height: 10vh;width: 89.875vh;background: black">
+    </div>
+    <div class="section11" style="height: 10vh;width: 89.875vh;">
+    </div>
+    <div class="section12" style="height: 10vh;width: 89.875vh;background: white">
+    </div>
+    <div class="section13" style="height: 10vh;width: 89.875vh;background: yellow">
+    </div>
+    <div class="section14" style="height: 10vh;width: 89.875vh;background: peachpuff">
+    </div>
+    <div class="section15" style="height: 10vh;width: 89.875vh;background: brown">
+    </div>
+    <div class="section16" style="height: 10vh;width: 89.875vh;background: rosybrown">
+    </div>
+    <div class="section17" style="height: 10vh;width: 89.875vh;background: cyan">
+    </div>
+    <div class="section18" style="height: 10vh;width: 89.875vh;background: orange">
+    </div>
+    <div class="section19" style="height: 10vh;width: 89.875vh;background: purple">
+    </div>
+    <div class="section20" style="height: 10vh;width: 89.875vh;background: red">
+    </div>
 </body>
 </html>
